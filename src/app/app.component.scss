@@ -1,9 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 $color1: darkblue;
 $color2: white;
 
+* {
+	font-family: 'Roboto';
+}
+
 header {
+	margin: 10px;
+	h1 {
+		font-weight: 200;
+	}
+
 	// Small devices (landscape phones, 576px and up)
-	@media (min-width: 576px) {
+	@media screen and (min-width: 576px) {
 		img {
 			padding-left: 25%;
 			padding-bottom: 50%;
@@ -21,7 +32,9 @@ header {
 	}
 
 	// Medium devices (tablets, 768px and up)
-	@media (min-width: 768px) {
+	@media screen and (min-width: 768px) {
+		height: 35vh;
+
 		img {
 			padding-left: 40%;
 			padding-bottom: 10%;
@@ -44,7 +57,12 @@ header {
 			border-top-right-radius: 10px;
 			border-bottom-left-radius: 10px;
 			margin-right: 10px;
+			margin-bottom: 10px;
 			font-weight: 600;
+			@media screen and (max-width: 576px) {
+				display: block;
+				width: 100%;
+			}
 		}
 
 		#login {
@@ -63,8 +81,13 @@ header {
 }
 
 #menu {
-	background-color: skyblue;
+	@media screen and (min-width: 768px) {
+		height: 60vh;
+	}
+	background-color: rgb(135, 206, 235);
 	padding: 10px;
+	height: 100%;
+	width: inherit;
 
 	ul {
 		list-style: none;
@@ -80,6 +103,7 @@ header {
 		margin-top: $margin;
 		border-radius: 5px;
 		font-size: 1.5em;
+		font-weight: lighter;
 		background-color: white;
 	}
 }
