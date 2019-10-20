@@ -1,11 +1,31 @@
+$color1: darkblue;
+$color2: white;
+
 header {
 	// Small devices (landscape phones, 576px and up)
 	@media (min-width: 576px) {
+		img {
+			padding-left: 25%;
+			padding-bottom: 50%;
+		}
 
+		#logo {
+			width: 30%;
+			display: inline-block;
+		}
+	
+		#heading {
+			width: 70%;
+			display: inline-block;
+		}
 	}
 
 	// Medium devices (tablets, 768px and up)
 	@media (min-width: 768px) {
+		img {
+			padding-left: 40%;
+			padding-bottom: 10%;
+		}
 		#logo {
 			width: 30%;
 			display: inline-block;
@@ -18,9 +38,6 @@ header {
 	}
 
 	#buttons {
-		$color1: darkblue;
-		$color2: white;
-
 		button {
 			width: 250px;
 			height: 50px;
@@ -42,5 +59,27 @@ header {
 			border-color: $color1;
 		}
 		
+	}
+}
+
+#menu {
+	background-color: skyblue;
+	padding: 10px;
+
+	ul {
+		list-style: none;
+	}
+
+	.menu-item {
+		$margin: 12px;
+		$padding-v: 20px;
+		padding-top: $padding-v;
+		padding-bottom: $padding-v;
+		padding-left: 2.5em;
+		margin-bottom: $margin;
+		margin-top: $margin;
+		border-radius: 5px;
+		font-size: 1.5em;
+		background-color: white;
 	}
 }

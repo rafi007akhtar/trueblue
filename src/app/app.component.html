@@ -1,5 +1,7 @@
 <header>
-  <div id="logo">replace by trublue logo</div>
+  <div id="logo">
+    <img src="../assets/trueblue-logo.png" alt="Trueblue Logo">
+  </div>
   <div id="heading">
     <h1>Book faster with TrueBlue.</h1>
 
@@ -13,4 +15,15 @@
 
   </div>
 </header>
+
+<br>
+
+<section id="menu">
+  <ul id="menu-list">
+    <li *ngFor="let menu_item of menu" class="menu-item">
+      {{count(menu_item)}}
+      {{menu_item | titlecase}}
+    </li>
+  </ul>
+</section>
 <router-outlet></router-outlet>
