@@ -1,0 +1,46 @@
+header {
+	// Small devices (landscape phones, 576px and up)
+	@media (min-width: 576px) {
+
+	}
+
+	// Medium devices (tablets, 768px and up)
+	@media (min-width: 768px) {
+		#logo {
+			width: 30%;
+			display: inline-block;
+		}
+	
+		#heading {
+			width: 70%;
+			display: inline-block;
+		}
+	}
+
+	#buttons {
+		$color1: darkblue;
+		$color2: white;
+
+		button {
+			width: 250px;
+			height: 50px;
+			border-top-right-radius: 10px;
+			border-bottom-left-radius: 10px;
+			margin-right: 10px;
+			font-weight: 600;
+		}
+
+		#login {
+			background-color: $color1;
+			color: $color2;
+			border: none;
+		}
+
+		#guest {
+			background-color: $color2;
+			color: $color1;
+			border-color: $color1;
+		}
+		
+	}
+}
